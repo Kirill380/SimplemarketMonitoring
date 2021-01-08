@@ -349,3 +349,10 @@ services:
       networks:
         - backend
 
+    nodejs:
+      build:
+        context: nodejs
+      ports:
+        - "8085:8080"
+      networks:
+        - backend
